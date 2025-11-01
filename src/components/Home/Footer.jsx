@@ -1,6 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import mainlogo from "../../assets/mainlogo.png"
+const customFontStyle = {
+  fontFamily: "'Neue Montreal Regular', sans-serif",
+  fontWeight: 600,
+  fontStyle: "normal",
+};
+
 const Footer = () => {
     const carBrands = [
         'Maruti Suzuki', 'Hyundai', 'Tata', 'Mahindra', 
@@ -84,7 +90,7 @@ const Footer = () => {
     ];
 
     return (
-        <footer className="bg-gradient-to-b from-gray-900 to-black text-white relative overflow-hidden">
+        <footer style={customFontStyle} className="bg-gradient-to-b from-gray-900 to-black text-white relative overflow-hidden">
             {/* Background Pattern */}
             <div className="absolute inset-0 opacity-5">
                 <div className="absolute inset-0" style={{

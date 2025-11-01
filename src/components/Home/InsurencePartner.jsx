@@ -1,5 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+const customFontStyle = {
+  fontFamily: "'Neue Montreal Regular', sans-serif",
+  fontWeight: 600,
+  fontStyle: "normal",
+};
+
 
 const InsurancePartner = () => {
   // Dummy insurance partners data
@@ -50,7 +56,7 @@ const InsurancePartner = () => {
   };
 
   return (
-    <div className="w-full insurence-partner overflow-y-hidden  bg-gradient-to-br from-blue-50 via-white to-blue-50 py-16 px-6 sm:px-6 lg:px-8">
+    <div style={customFontStyle} className="w-full insurence-partner overflow-y-hidden  bg-gradient-to-br from-blue-50 via-white to-blue-50 py-16 px-6 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <motion.div

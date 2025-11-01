@@ -9,9 +9,17 @@ import Workshops from './components/Home/Workshops';
 import InsuranceClaims from './components/Home/InsuranceClaims';
 import Testimonials from './components/Home/Testimonials';
 import Footer from './components/Home/Footer';
+import './fonts.css';
 import Hero from './components/Home/Hero';
 import Live from './components/Home/Live';
 import Best from './components/Home/Best';
+
+
+const customFontStyle = {
+  fontFamily: "'Neue Montreal Regular', sans-serif",
+  fontWeight: 600,
+  fontStyle: "normal",
+};
 
 // --- SVG ICONS ---
 const MenuIcon = () => (
@@ -166,7 +174,7 @@ const MobileNav = ({ isOpen, closeMenu, activeSection }) => {
             {/* Content Container */}
             <div className="flex flex-col h-full">
               {/* Header */}
-              <div className="sticky top-0 bg-white/80 backdrop-blur-xl border-b border-gray-100 px-6 py-5 z-10">
+              <div style={customFontStyle} className="sticky top-0 bg-white/80 backdrop-blur-xl border-b border-gray-100 px-6 py-5 z-10">
                 <div className="flex justify-between items-center">
                   <motion.div 
                     className="flex items-center text-blue-600"
@@ -180,7 +188,7 @@ const MobileNav = ({ isOpen, closeMenu, activeSection }) => {
                       whileHover={{ rotate: [0, -10, 10, -10, 0] }}
                       transition={{ duration: 0.5 }}
                     />
-                    <span className="text-xl font-extrabold tracking-tight ml-2">Mechanic Uncle</span>
+                    <span style={customFontStyle}  className="text-xl font-extrabold tracking-tight ml-2">Mechanic Uncle</span>
                   </motion.div>
                   
                   <motion.button 
@@ -532,7 +540,7 @@ const Navbar = () => {
 // --- CTA SECTION ---
 const CTA = () => {
   return (
-    <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 relative  overflow-hidden">
+    <section style={customFontStyle} className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 relative  overflow-hidden">
       {/* Animated Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse" />

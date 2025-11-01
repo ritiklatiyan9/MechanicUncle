@@ -1,5 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+const customFontStyle = {
+  fontFamily: "'Neue Montreal Regular', sans-serif",
+  fontWeight: 600,
+  fontStyle: "normal",
+};
 
 const Services = () => {
     const services = [
@@ -106,7 +111,7 @@ gradient: 'from-blue-600 to-blue-700',
     };
 
     return (
-      <div className="w-full overflow-y-hidden overflow-x-hidden py-4 px-4 md:py-8 bg-gradient-to-b from-white via-blue-50 to-white">
+      <div style={customFontStyle} className="w-full overflow-y-hidden overflow-x-hidden py-4 px-4 md:py-8 bg-gradient-to-b from-white via-blue-50 to-white">
         <div className="container mx-auto px-4 sm:px-6 max-w-7xl">
           {/* Header Section */}
           <motion.div

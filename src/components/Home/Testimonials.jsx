@@ -1,5 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+const customFontStyle = {
+  fontFamily: "'Neue Montreal Regular', sans-serif",
+  fontWeight: 600,
+  fontStyle: "normal",
+};
+
 
 const Testimonials = () => {
     const testimonials = [
@@ -75,7 +81,7 @@ const Testimonials = () => {
     );
 
     return (
-        <div className="w-full overflow-x-hidden overflow-y-hidden py-4 md:py-8 px-4 bg-gradient-to-b from-white via-blue-50 to-white relative">
+        <div style={customFontStyle} className="w-full overflow-x-hidden overflow-y-hidden py-4 md:py-8 px-4 bg-gradient-to-b from-white via-blue-50 to-white relative">
             {/* Background Decorative Elements */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <div className="absolute top-20 -left-20 md:left-20 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob" />

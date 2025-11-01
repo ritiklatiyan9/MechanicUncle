@@ -1,5 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+const customFontStyle = {
+  fontFamily: "'Neue Montreal Regular', sans-serif",
+  fontWeight: 600,
+  fontStyle: "normal",
+};
 
 // Icon Components
 const CarSelectionIcon = () => (
@@ -122,7 +127,7 @@ const HowItWorks = () => {
     };
 
     return (
-      <div className="py-4 px-4 md:py-8 bg-gradient-to-b from-white via-blue-50 to-white relative overflow-hidden ">
+      <div style={customFontStyle} className="py-4 px-4 md:py-8 bg-gradient-to-b from-white via-blue-50 to-white relative overflow-hidden ">
         {/* Background Decorative Elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-20 -left-20 md:left-10 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob" />
