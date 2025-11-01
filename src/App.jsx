@@ -10,6 +10,7 @@ import InsuranceClaims from './components/Home/InsuranceClaims';
 import Testimonials from './components/Home/Testimonials';
 import Footer from './components/Home/Footer';
 import Hero from './components/Home/Hero';
+import Live from './components/Home/Live';
 
 // --- SVG ICONS ---
 const MenuIcon = () => (
@@ -594,6 +595,7 @@ function App() {
         <AnimatedSection id="services" className="bg-gray-50">
           <Services />
         </AnimatedSection>
+        {/* <Live/> */}
         <AnimatedSection id="workshops" className="bg-gray-50">
           <Workshops />
         </AnimatedSection>
