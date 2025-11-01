@@ -11,6 +11,7 @@ import Testimonials from './components/Home/Testimonials';
 import Footer from './components/Home/Footer';
 import Hero from './components/Home/Hero';
 import Live from './components/Home/Live';
+import Best from './components/Home/Best';
 
 // --- SVG ICONS ---
 const MenuIcon = () => (
@@ -586,6 +587,9 @@ function App() {
       <Navbar />
       <main className="pt-24">
         <Hero />
+        <AnimatedSection id="guarantee" className="bg-gray-50">
+        <Best/>
+        </AnimatedSection>
         <AnimatedSection id="guarantee" className="bg-gray-50">
           <Guarantee />
         </AnimatedSection>
