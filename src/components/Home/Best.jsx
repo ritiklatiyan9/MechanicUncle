@@ -2,6 +2,12 @@ import React from 'react';
 import { motion, useInView } from 'framer-motion';
 import { FiZap, FiMapPin, FiCheckSquare } from 'react-icons/fi';
 import { useRef } from 'react';
+const customFontStyle = {
+  fontFamily: "'Neue Montreal Regular', sans-serif",
+  fontWeight: 600,
+  fontStyle: "normal",
+};
+
 
 // --- Reusable Feature Component ---
 const Feature = ({ icon, title, children }) => (
@@ -51,7 +57,7 @@ const Best = () => {
   };
 
   return (
-    <section ref={ref} className="min-h-screen w-full bg-white px-4 py-12 sm:py-16 lg:py-20">
+    <section style={customFontStyle} ref={ref} className="min-h-screen w-full bg-white px-4 py-12 sm:py-16 lg:py-20">
       <div className="container mx-auto grid grid-cols-1 items-center gap-8 px-4 sm:gap-12 sm:px-6 md:grid-cols-2 md:gap-16 lg:px-8">
         
         {/* --- Left Column: Text Content --- */}

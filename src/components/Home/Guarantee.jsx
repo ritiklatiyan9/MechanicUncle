@@ -7,6 +7,14 @@ import g2 from '../../assets/g2.png'
 import g3 from '../../assets/g3.png'
 import g4 from '../../assets/g4.png'
 import g5 from '../../assets/g5.png'
+
+
+const customFontStyle = {
+  fontFamily: "'Neue Montreal Regular', sans-serif",
+  fontWeight: 600,
+  fontStyle: "normal",
+};
+
 // Dummy data for the services with circular positions
 // 5 services evenly spaced = 360° / 5 = 72° between each
 const services = [
@@ -54,6 +62,7 @@ const ServiceCard = ({ icon, title, description, delay = 0 }) => (
     whileInView={{ opacity: 1, scale: 1 }}
     transition={{ duration: 0.5, delay }}
     viewport={{ once: true }}
+    style={customFontStyle}
   >
     <div className="flex justify-center">
       <div className="mb-3 flex h-20 w-20 items-center justify-center rounded-full bg-white shadow-lg">
@@ -82,13 +91,15 @@ const Guarantee = () => {
 
   return (
     <section 
+
       className="relative bg-gray-100 py-8 px-4 font-sans overflow-hidden"
       style={{
         backgroundImage: `url(${bg})`,
         backgroundSize: '200%',
         backgroundPosition: 'center',
         backgroundBlendMode: 'multiply',
-        backgroundColor: 'rgba(249, 250, 251, 0.85)'
+        backgroundColor: 'rgba(249, 250, 251, 0.85)',
+   
       }}
     >
           <motion.div 
@@ -97,6 +108,7 @@ const Guarantee = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
                     className="text-center mb-8 sm:mb-32"
+                    
                 >
                     <motion.span 
                         initial={{ opacity: 0, scale: 0.5 }}
@@ -108,7 +120,7 @@ const Guarantee = () => {
                         Why Choose Us
                     </motion.span>
                     
-                    <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    <h2 style={customFontStyle} className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
                         Our <span className="bg-gradient-to-r from-blue-600 to-blue-400 text-transparent bg-clip-text">Guarantees</span>
                     </h2>
                     
