@@ -39,7 +39,7 @@ const InsuranceClaims = () => {
     ];
 
     return (
-        <div className="w-full overflow-x-hidden py-4 px-4 md:py-8 bg-gradient-to-br from-blue-50 via-white to-blue-50 relative insurance">
+        <div className="w-full overflow-y-hidden overflow-x-hidden py-4 px-4 md:py-8 bg-gradient-to-br from-blue-50 via-white to-blue-50 relative insurance">
             {/* Background Decorative Elements */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <div className="absolute top-20 -left-20 md:left-10 w-64 h-64 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob" />

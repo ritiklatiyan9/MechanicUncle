@@ -438,7 +438,7 @@ const EstimationModal = ({ car, setShowEstimate }) => {
 
     return (
         <motion.div
-            className="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-start justify-center "
+            className="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 px-6 flex items-start justify-center "
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}

@@ -89,7 +89,7 @@ const Guarantee = () => {
     };
 
     return(
-        <div className="bg-gradient-to-b from-blue-50 via-white to-blue-50 py-10">
+        <div className="bg-gradient-to-b from-blue-50 via-white to-blue-50 py-10 overflow-y-hidden">
             <div className="container mx-auto px-6">
                 {/* Header Section */}
                 <motion.div 

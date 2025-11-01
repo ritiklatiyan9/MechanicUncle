@@ -109,7 +109,7 @@ const Workshops = () => {
     };
 
     return (
-        <div className="w-full overflow-x-hidden py-4 px-4 md:py-8 bg-gradient-to-b from-blue-50 via-white to-blue-50">
+        <div className="w-full overflow-y-hidden overflow-x-hidden py-4 px-4 md:py-8 bg-gradient-to-b from-blue-50 via-white to-blue-50">
             <div className="container mx-auto  px-4 sm:px-6 max-w-6xl">
                 {/* Header Section */}
                 <motion.div
